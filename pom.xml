@@ -11,11 +11,13 @@
 		<module>persistence</module>
 		<module>web</module>
         <module>plugins</module>
-    </modules>
+		<module>services</module>
+		<module>process</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>B4Doc</name>
-	<description>Application for  writing and reading technical and functionnal documentation</description>
+	<description>Application for  writing and reading technical and functional documentation</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

@@ -10,10 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>domain</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>../process</module>
-    </modules>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
