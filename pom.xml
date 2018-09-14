@@ -10,7 +10,8 @@
 		<module>domain</module>
 		<module>persistence</module>
 		<module>web</module>
-	</modules>
+        <module>plugins</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>B4Doc</name>
