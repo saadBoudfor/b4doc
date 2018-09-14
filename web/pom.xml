@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>fr.b4.apps.documentation</groupId>
-            <artifactId>persistence</artifactId>
+            <artifactId>process</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
