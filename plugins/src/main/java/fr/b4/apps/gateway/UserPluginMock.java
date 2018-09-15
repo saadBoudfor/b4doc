@@ -5,9 +5,10 @@ package fr.b4.apps.gateway;
  * Provide fictive user.
  */
 public class UserPluginMock implements UserPlugin {
+    private static final String DUMP_TOKEN = "";
     @Override
     public Boolean isStillConnected(String token) {
-        return null;
+        return token.equals(DUMP_TOKEN);
     }
 
     @Override
@@ -26,11 +27,11 @@ public class UserPluginMock implements UserPlugin {
 
     @Override
     public String login(User user, String password) {
-        return null;
+        return DUMP_TOKEN;
     }
 
     @Override
     public String logout(User user, String password) {
-        return null;
+        return DUMP_TOKEN;
     }
 }

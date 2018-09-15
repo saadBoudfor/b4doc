@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class functionalPage extends Page {
-    private String Description;
+    private String description;
     @OneToOne
     private UserStory userStory;
     @OneToMany

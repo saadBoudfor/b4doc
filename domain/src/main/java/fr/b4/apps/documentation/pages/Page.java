@@ -17,10 +17,10 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public abstract class Page {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    protected Long Id;
-    protected LocalDateTime Date;
+    protected Long id;
+    protected LocalDateTime date;
     protected String authorPublicID;
-    protected LocalDateTime LastUpdate;
+    protected LocalDateTime lastUpdate;
     protected Integer grade;
     @Enumerated(value = EnumType.STRING)
     protected Status status;

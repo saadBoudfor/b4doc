@@ -20,6 +20,5 @@ import javax.persistence.Table;
 public class UserStory {
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
-
+    private Long id;
 }

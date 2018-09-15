@@ -19,5 +19,5 @@ import javax.persistence.GenerationType;
 public class Model {
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
+    private Long id;
 }
