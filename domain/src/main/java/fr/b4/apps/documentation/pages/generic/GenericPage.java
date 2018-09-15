@@ -18,4 +18,9 @@ import java.util.List;
 public class GenericPage extends Page {
     @OneToMany
     private List<Content> contents;
+
+    @Override
+    public boolean equals(Object page) {
+        return super.equals(page);
+    }
 }

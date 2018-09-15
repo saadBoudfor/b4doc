@@ -1,5 +1,6 @@
 package fr.b4.apps.documentation.pages;
 
+import fr.b4.apps.documentation.pages.generic.GenericPage;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,4 +25,9 @@ public abstract class Page {
     protected Integer grade;
     @Enumerated(value = EnumType.STRING)
     protected Status status;
+
+    @Override
+    public boolean equals(Object page) {
+        return super.equals(page);
+    }
 }
