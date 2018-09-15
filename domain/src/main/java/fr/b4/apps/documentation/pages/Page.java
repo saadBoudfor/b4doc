@@ -1,6 +1,5 @@
 package fr.b4.apps.documentation.pages;
 
-import fr.b4.apps.documentation.pages.generic.GenericPage;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

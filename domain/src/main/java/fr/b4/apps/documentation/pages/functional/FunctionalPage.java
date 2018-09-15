@@ -26,4 +26,8 @@ public class FunctionalPage extends Page {
     private List<Model> models;
     @OneToMany
     private List<Task> tasks;
+    @Override
+    public boolean equals(Object page) {
+        return super.equals(page);
+    }
 }
