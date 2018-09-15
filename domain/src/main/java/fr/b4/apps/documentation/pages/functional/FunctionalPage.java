@@ -2,6 +2,7 @@ package fr.b4.apps.documentation.pages.functional;
 
 import fr.b4.apps.documentation.pages.Page;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
@@ -16,6 +17,7 @@ import java.util.List;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class FunctionalPage extends Page {
     private String description;
     @OneToOne

@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by sboudfor on 14/09/2018.
@@ -16,7 +18,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public abstract class Page {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
     protected LocalDateTime date;
     protected String authorPublicID;
@@ -25,8 +28,18 @@ public abstract class Page {
     @Enumerated(value = EnumType.STRING)
     protected Status status;
 
-    @Override
-    public boolean equals(Object page) {
-        return super.equals(page);
+    public boolean equals(Object object) {
+        Page page = (Page) object;
+        List<Boolean> equalConditions = new ArrayList<>();
+        if (grade != null)
+            equalConditions.add(grade.equals(page.grade));
+        if (id != null)
+            equalConditions.add(id.equals(page.id));
+        if (authorPublicID != null)
+            equalConditions.add(page.authorPublicID.equals(authorPublicID));
+        equalConditions.add(page.date == date);
+        equalConditions.add(page.lastUpdate == lastUpdate);
+        equalConditions.add(page.date == date);
+        return equalConditions.stream().filter(isValidField -> !isValidField).count() == 0;
     }
 }
